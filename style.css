@@ -1,0 +1,303 @@
+/* ===== Fuentes y Variables ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --header-height: 3.5rem;
+    --primary-color: #0077B5; /* Un azul profesional como el de LinkedIn */
+    --secondary-color: #0E2431;
+    --text-color: #333;
+    --text-color-light: #888;
+    --body-color: #F9F9F9;
+    --container-color: #FFF;
+    
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.25rem;
+}
+
+/* ===== Base ===== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 6rem 0 2rem;
+}
+
+.section__title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* ===== Encabezado y Navegación ===== */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--container-color);
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.nav__list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__link {
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color .3s;
+}
+
+.nav__link:hover {
+    color: var(--primary-color);
+}
+
+/* ===== Inicio ===== */
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.inicio__container {
+    padding-top: var(--header-height);
+}
+
+.inicio__profesion {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.inicio__descripcion {
+    margin-bottom: 2rem;
+    color: var(--text-color-light);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inicio__social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.inicio__social-link {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    transition: color .3s, transform .3s;
+}
+
+.inicio__social-link:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px); /* Efecto interactivo al pasar el mouse */
+}
+
+/* ===== Botón ===== */
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color .3s, transform .3s;
+}
+
+.button:hover {
+    background-color: #005A87; /* Un tono más oscuro de azul */
+    transform: translateY(-3px);
+}
+
+/* ===== Sobre Mí ===== */
+.sobre-mi__container {
+    text-align: center;
+}
+
+.sobre-mi__container p {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+/* ===== Experiencia ===== */
+.experiencia__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.experiencia__item {
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-left: 5px solid var(--primary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experiencia__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.experiencia__item h3 {
+    font-size: var(--h3-font-size);
+}
+
+.experiencia__empresa {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.experiencia__fecha {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    margin-bottom: 1rem;
+}
+
+.experiencia__item ul {
+    list-style-type: '✓  ';
+    padding-left: 1.5rem;
+}
+
+/* ===== Habilidades ===== */
+.habilidades__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.habilidad__tag {
+    background-color: var(--container-color);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    cursor: default;
+    transition: all .3s;
+}
+
+.habilidad__tag:hover {
+    background-color: var(--primary-color);
+    color: #FFF;
+    transform: scale(1.05); /* Efecto interactivo */
+}
+
+/* ===== Contacto ===== */
+.contacto__container {
+    text-align: center;
+}
+
+.contacto__container p {
+    margin-bottom: 2rem;
+}
+
+.contacto__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contacto__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.contacto__item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: #FFF;
+    margin-top: 4rem;
+}
+
+
+/* ===== Responsive (para celulares) ===== */
+@media screen and (max-width: 768px) {
+    .nav__list {
+        /* Aquí podrías ocultar el menú y agregar un botón de hamburguesa con JavaScript */
+        display: none; 
+    }
+    
+    .section {
+        padding: 4rem 0 1rem;
+    }
+
+    .inicio {
+        min-height: 80vh;
+    }
+
+    :root {
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.5rem;
+    }
+}
