@@ -11,16 +11,20 @@
 
     <header class="header">
         <nav class="nav container">
-           <a href="#inicio" class="nav__logo">
-                  <img src="logo_pequeno.png" alt="Logo Andrés Caro" class="nav__logo-img">
+            <a href="#inicio" class="nav__logo">
+                <img src="logo.png" alt="Logo Andrés Caro" class="nav__logo-img">
             </a>
             <ul class="nav__list">
                 <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
                 <li class="nav__item"><a href="#sobre-mi" class="nav__link">Perfil</a></li>
                 <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
                 <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
                 <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
             </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
@@ -169,8 +173,27 @@
         <p>&copy; 2025 AFC7. Todos los derechos reservados.</p>
     </footer>
 
-</body>
     <a href="https://wa.me/573106180550?text=Hola%20Andrés,%20vi%20tu%20portafolio%20web%20y%20estoy%20interesado%20en%20tu%20perfil." class="whatsapp-float-btn" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+    <script>
+        // ===== CÓDIGO PARA EL MENÚ MÓVIL =====
+        const navMenu = document.querySelector('.nav__list');
+        const navToggle = document.getElementById('nav-toggle');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show-menu');
+            // Cambiar el ícono de hamburguesa a una "X"
+            const icon = navToggle.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
+</body>
+       
 </html>
