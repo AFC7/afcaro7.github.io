@@ -71,7 +71,7 @@ a {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0;css
     background-color: var(--container-color);
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -87,7 +87,7 @@ a {
 .nav__logo {
     font-weight: 700;
     font-size: 1.5rem;
-    color: var(--secondary-color);
+    color: var(--secondary-color);css
 }
 
 .nav__list {
@@ -308,6 +308,6 @@ a {
 }
 
 .nav__logo-img {
-    height: 40px; /* Define la altura del logo. Ajusta este valor si lo necesitas. */
+    height: 25px; /* Define la altura del logo. Ajusta este valor si lo necesitas. */
     width: auto; /* Mantiene la proporción original del logo */
 }
