@@ -308,6 +308,6 @@ a {
 }
 
 .nav__logo-img {
-    height: 25px; /* Define la altura del logo. Ajusta este valor si lo necesitas. */
+    height: 35px; /* Define la altura del logo. Ajusta este valor si lo necesitas. */
     width: auto; /* Mantiene la proporción original del logo */
 }
