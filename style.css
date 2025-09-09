@@ -311,3 +311,13 @@ a {
     height: 35px; /* Define la altura del logo. Ajusta este valor si lo necesitas. */
     width: auto; /* Mantiene la proporción original del logo */
 }
+/* ===== Estilos para el Logo en la sección de Contacto ===== */
+.contacto__logo-container {
+    text-align: center; /* Centra el logo horizontalmente */
+    margin-bottom: 2rem; /* Crea un espacio entre el logo y el título "CONTACTO" */
+}
+
+.contacto__logo-img {
+    width: 250px; /* Ancho del logo, puedes ajustarlo a tu gusto */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
