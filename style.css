@@ -301,3 +301,13 @@ a {
         --h2-font-size: 1.5rem;
     }
 }
+/* ===== Estilos para el Logo en la Navegación ===== */
+.nav__logo {
+    display: flex; /* Ayuda a alinear la imagen verticalmente */
+    align-items: center;
+}
+
+.nav__logo-img {
+    height: 40px; /* Define la altura del logo. Ajusta este valor si lo necesitas. */
+    width: auto; /* Mantiene la proporción original del logo */
+}
