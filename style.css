@@ -348,3 +348,68 @@ a {
 .whatsapp-float-btn:hover {
     transform: scale(1.1); /* Agranda un poco el botón al pasar el mouse */
 }
+/* ================================================== */
+/* ===== ESTILOS RESPONSIVOS (PARA MÓVILES) ===== */
+/* ================================================== */
+@media screen and (max-width: 768px) {
+    /* ----- AJUSTES GENERALES ----- */
+    .section {
+        padding: 4rem 0 2rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+
+    /* ----- NAVEGACIÓN MÓVIL ----- */
+    .nav__list {
+        position: fixed;
+        top: -100%; /* Oculta el menú arriba de la pantalla */
+        left: 0;
+        width: 100%;
+        background-color: var(--container-color);
+        padding: 2rem 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border-radius: 0 0 1rem 1rem;
+        transition: top 0.4s;
+
+        /* Reconfigura la lista para que sea vertical */
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    /* Clase que se añade con JavaScript para mostrar el menú */
+    .nav__list.show-menu {
+        top: var(--header-height); /* Muestra el menú bajándolo */
+    }
+
+    .nav__toggle {
+        display: block; /* Muestra el botón de hamburguesa */
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--secondary-color);
+    }
+
+    /* ----- SLIDER EN MÓVIL ----- */
+    .slide-content {
+        padding: 1rem 1.5rem;
+    }
+
+    /* ----- BOTÓN DE WHATSAPP EN MÓVIL ----- */
+    .whatsapp-float-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Oculta el botón de hamburguesa en pantallas grandes */
+.nav__toggle {
+    display: none;
+}
