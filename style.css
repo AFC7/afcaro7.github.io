@@ -3,7 +3,7 @@
 
 :root {
     --header-height: 3.5rem;
-    --primary-color: #0077B5; /* Un azul profesional como el de LinkedIn */
+    --primary-color: #0077B5;
     --secondary-color: #0E2431;
     --text-color: #333;
     --text-color-light: #888;
@@ -71,7 +71,7 @@ a {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;css
+    left: 0;
     background-color: var(--container-color);
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -85,9 +85,13 @@ a {
 }
 
 .nav__logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--secondary-color);css
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .nav__list {
@@ -103,6 +107,10 @@ a {
 
 .nav__link:hover {
     color: var(--primary-color);
+}
+
+.nav__toggle {
+    display: none;
 }
 
 /* ===== Inicio ===== */
@@ -147,7 +155,7 @@ a {
 
 .inicio__social-link:hover {
     color: var(--primary-color);
-    transform: translateY(-5px); /* Efecto interactivo al pasar el mouse */
+    transform: translateY(-5px);
 }
 
 /* ===== Botón ===== */
@@ -162,7 +170,7 @@ a {
 }
 
 .button:hover {
-    background-color: #005A87; /* Un tono más oscuro de azul */
+    background-color: #005A87;
     transform: translateY(-3px);
 }
 
@@ -240,10 +248,20 @@ a {
 .habilidad__tag:hover {
     background-color: var(--primary-color);
     color: #FFF;
-    transform: scale(1.05); /* Efecto interactivo */
+    transform: scale(1.05);
 }
 
 /* ===== Contacto ===== */
+.contacto__logo-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto__logo-img {
+    width: 250px;
+    height: auto;
+}
+
 .contacto__container {
     text-align: center;
 }
@@ -280,79 +298,40 @@ a {
     margin-top: 4rem;
 }
 
-
-/* ===== Responsive (para celulares) ===== */
-@media screen and (max-width: 768px) {
-    .nav__list {
-        /* Aquí podrías ocultar el menú y agregar un botón de hamburguesa con JavaScript */
-        display: none; 
-    }
-    
-    .section {
-        padding: 4rem 0 1rem;
-    }
-
-    .inicio {
-        min-height: 80vh;
-    }
-
-    :root {
-        --h1-font-size: 2rem;
-        --h2-font-size: 1.5rem;
-    }
-}
-/* ===== Estilos para el Logo en la Navegación ===== */
-.nav__logo {
-    display: flex; /* Ayuda a alinear la imagen verticalmente */
-    align-items: center;
-}
-
-.nav__logo-img {
-    height: 35px; /* Define la altura del logo. Ajusta este valor si lo necesitas. */
-    width: auto; /* Mantiene la proporción original del logo */
-}
-/* ===== Estilos para el Logo en la sección de Contacto ===== */
-.contacto__logo-container {
-    text-align: center; /* Centra el logo horizontalmente */
-    margin-bottom: 2rem; /* Crea un espacio entre el logo y el título "CONTACTO" */
-}
-
-.contacto__logo-img {
-    width: 250px; /* Ancho del logo, puedes ajustarlo a tu gusto */
-    height: auto; /* Mantiene la proporción original de la imagen */
-}
-/* ===== Estilos para el Botón Flotante de WhatsApp ===== */
+/* ===== Botón Flotante de WhatsApp ===== */
 .whatsapp-float-btn {
-    position: fixed; /* La clave para que flote y siga el scroll */
+    position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 25px; /* Distancia desde abajo */
-    right: 25px;  /* Distancia desde la derecha */
-    background-color: #25D366; /* Color oficial de WhatsApp */
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
     color: #FFF;
-    border-radius: 50%; /* Lo hace circular */
+    border-radius: 50%;
     text-align: center;
-    font-size: 2rem; /* Tamaño del ícono */
+    font-size: 2rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-    z-index: 1000; /* Asegura que esté por encima de todo */
-    
-    /* Para centrar el ícono perfectamente */
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* Animación interactiva */
     transition: transform 0.3s ease;
 }
 
 .whatsapp-float-btn:hover {
-    transform: scale(1.1); /* Agranda un poco el botón al pasar el mouse */
+    transform: scale(1.1);
 }
+
 /* ================================================== */
 /* ===== ESTILOS RESPONSIVOS (PARA MÓVILES) ===== */
 /* ================================================== */
 @media screen and (max-width: 768px) {
     /* ----- AJUSTES GENERALES ----- */
+    :root {
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.5rem;
+    }
+
     .section {
         padding: 4rem 0 2rem;
     }
@@ -361,13 +340,10 @@ a {
         padding: 0 1rem;
     }
 
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
-
     /* ----- NAVEGACIÓN MÓVIL ----- */
     .nav__list {
         position: fixed;
-        top: -100%; /* Oculta el menú arriba de la pantalla */
+        top: -100%;
         left: 0;
         width: 100%;
         background-color: var(--container-color);
@@ -375,28 +351,21 @@ a {
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         border-radius: 0 0 1rem 1rem;
         transition: top 0.4s;
-
-        /* Reconfigura la lista para que sea vertical */
+        z-index: 50;
         flex-direction: column;
         text-align: center;
         gap: 1.5rem;
     }
 
-    /* Clase que se añade con JavaScript para mostrar el menú */
     .nav__list.show-menu {
-        top: var(--header-height); /* Muestra el menú bajándolo */
+        top: var(--header-height);
     }
 
     .nav__toggle {
-        display: block; /* Muestra el botón de hamburguesa */
+        display: block;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--secondary-color);
-    }
-
-    /* ----- SLIDER EN MÓVIL ----- */
-    .slide-content {
-        padding: 1rem 1.5rem;
     }
 
     /* ----- BOTÓN DE WHATSAPP EN MÓVIL ----- */
@@ -407,9 +376,4 @@ a {
         right: 15px;
         font-size: 1.5rem;
     }
-}
-
-/* Oculta el botón de hamburguesa en pantallas grandes */
-.nav__toggle {
-    display: none;
 }
