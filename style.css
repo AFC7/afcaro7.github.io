@@ -381,7 +381,8 @@ a {
 /* ===== Habilidades (Versión Mejorada) ===== */
 .habilidades__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* AJUSTE CLAVE: Reducimos el ancho mínimo de 350px a 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
