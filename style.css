@@ -33,6 +33,39 @@ body {
     color: var(--text-color);
 }
 
+h1, h2, h3 {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 6rem 0 2rem;
+}
+
+.section__title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
 /* ===== Encabezado y Navegación ===== */
 .header {
     width: 100%;
@@ -193,12 +226,29 @@ body {
     padding-left: 1.5rem;
 }
 
-/* ===== Habilidades (Versión Mejorada) ===== */
-.habilidades__grid {
-    display: grid;
-    /* CAMBIO CLAVE: Reduje el ancho mínimo para que quepa en móviles */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+/* ===== Habilidades ===== */
+.habilidades__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.habilidad__tag {
+    background-color: var(--container-color);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    cursor: default;
+    transition: all .3s;
+}
+
+.habilidad__tag:hover {
+    background-color: var(--primary-color);
+    color: #FFF;
+    transform: scale(1.05);
 }
 
 /* ===== Contacto ===== */
@@ -459,11 +509,4 @@ body {
     color: var(--text-color-light);
     line-height: 1.6;
     flex-grow: 1;
-}
-
-/* ================================================== */
-/* ===== ESTILOS RESPONSIVOS (PARA MÓVILES) ===== */
-/* ================================================== */
-@media screen and (max-width: 768px) {
-    /* ... (todos los estilos responsivos que ya tenías) ... */
 }
