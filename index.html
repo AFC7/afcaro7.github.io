@@ -9,13 +9,20 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="header">
         <nav class="nav container">
             <a href="#inicio" class="nav__logo">
-                <img src="logo_pequeno.png" alt="Logo Andrés Caro" class="nav__logo-img">
+                <img src="images/logo_pequeno.png" alt="Logo Andrés Caro" class="nav__logo-img">
             </a>
 
             <ul class="nav__list">
@@ -23,6 +30,7 @@
                 <li class="nav__item"><a href="#sobre-mi" class="nav__link">Perfil</a></li>
                 <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
                 <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
                 <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
             </ul>
 
@@ -187,9 +195,57 @@
             </div></center>
         </section>
 
+<section id="proyectos" class="section">
+            <h2 class="section__title" data-aos="fade-down">Proyectos Destacados</h2>
+            <div class="proyectos-grid container gallery">
+
+              <div class="proyecto-card" data-aos="fade-up">
+                    <a href="https://www.studioximenaurrea.site/" target="_blank" class="proyecto-card-link">
+                        <div class="proyecto-card-imagen">
+                            <img src="images/proyecto-web.webp" alt="Portafolio para Studio Ximena Urrea" width="1080" height="1080">
+                        </div>
+                        <div class="proyecto-card-contenido">
+                            <span class="proyecto-card-categoria">Desarrollo Web</span>
+                            <h3>Portafolio para Artista de Maquillaje</h3>
+                            <p>Diseño y desarrollo de un sitio web elegante y minimalista para una maquilladora profesional, enfocado en mostrar su portafolio de trabajos de forma visualmente atractiva.</p>
+                        </div>
+                    </a>
+                </div>
+<!-- 
+                <div class="proyecto-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="proyecto-card-imagen">
+                        <a href="imagenes/fotovoltaico-1.webp" data-caption="Instalación de paneles solares">
+                            <img src="imagenes/fotovoltaico-thumbnail.webp" alt="Sistema Fotovoltaico">
+                        </a>
+                        <a href="imagenes/fotovoltaico-2.webp" data-caption="Detalle del inversor y baterías" style="display:none;"></a>
+                        <a href="imagenes/fotovoltaico-3.webp" data-caption="Diagrama de conexión" style="display:none;"></a>
+                    </div>
+                    <div class="proyecto-card-contenido">
+                        <span class="proyecto-card-categoria">Energías Renovables</span>
+                        <h3>Sistema Fotovoltaico Autónomo</h3>
+                        <p>Diseño e implementación de un sistema de energía solar para SST GCA. Haz clic en la imagen para ver la galería de fotos.</p>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="proyecto-card-imagen">
+                        <a href="imagenes/plc-grande.webp" data-caption="Mantenimiento de PLC para maquinaria de construcción">
+                            <img src="imagenes/plc-thumbnail.webp" alt="Mantenimiento PLC">
+                        </a>
+                    </div>
+                    <div class="proyecto-card-contenido">
+                        <span class="proyecto-card-categoria">Automatización y Control</span>
+                        <h3>Mantenimiento de PLC</h3>
+                        <p>Operación y mantenimiento de herramientas programables (PLC) para la continuidad de proyectos de construcción. Haz clic en la imagen para ampliar.</p>
+                    </div>
+                </div>
+
+            </div> -->
+        </section>
+
         <section id="contacto" class="section">
             <div class="contacto__logo-container" data-aos="fade-up">
-                <img src="logo.png" alt="Logo Andrés Felipe Caro" class="contacto__logo-img">
+                <img src="images/logo.png" alt="Logo Andrés Felipe Caro" class="contacto__logo-img">
             </div>
             <h2 class="section__title" data-aos="fade-down">Contacto</h2>
             <div class="contacto__container container">
@@ -255,6 +311,25 @@
             }
         });
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>
+
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Inicializar el Menú Móvil
+        // ... (tu código del menú va aquí) ...
+
+        // 3. AÑADE LA INICIALIZACIÓN DE LA GALERÍA AQUÍ
+        window.addEventListener('load', function() {
+            baguetteBox.run('.gallery');
+        });
+    </script>
+</body>
 
 </body>
 </html>
