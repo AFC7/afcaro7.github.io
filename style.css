@@ -33,7 +33,165 @@ body {
     color: var(--text-color);
 }
 
-/* ... (resto de los estilos base) ... */
+/* ===== Encabezado y Navegación ===== */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--container-color);
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.nav__list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__link {
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color .3s;
+}
+
+.nav__link:hover {
+    color: var(--primary-color);
+}
+
+.nav__toggle {
+    display: none;
+}
+
+/* ===== Inicio ===== */
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.inicio__container {
+    padding-top: var(--header-height);
+}
+
+.inicio__profesion {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.inicio__descripcion {
+    margin-bottom: 2rem;
+    color: var(--text-color-light);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inicio__social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.inicio__social-link {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    transition: color .3s, transform .3s;
+}
+
+.inicio__social-link:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+/* ===== Botón ===== */
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color .3s, transform .3s;
+}
+
+.button:hover {
+    background-color: #005A87;
+    transform: translateY(-3px);
+}
+
+/* ===== Sobre Mí ===== */
+.sobre-mi__container {
+    text-align: center;
+}
+
+.sobre-mi__container p {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+/* ===== Experiencia ===== */
+.experiencia__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.experiencia__item {
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-left: 5px solid var(--primary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experiencia__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.experiencia__item h3 {
+    font-size: var(--h3-font-size);
+}
+
+.experiencia__empresa {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.experiencia__fecha {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    margin-bottom: 1rem;
+}
+
+.experiencia__item ul {
+    list-style-type: '✓  ';
+    padding-left: 1.5rem;
+}
 
 /* ===== Habilidades (Versión Mejorada) ===== */
 .habilidades__grid {
@@ -43,7 +201,190 @@ body {
     gap: 2rem;
 }
 
-/* ... (resto de los estilos de habilidades) ... */
+/* ===== Contacto ===== */
+.contacto__logo-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto__logo-img {
+    width: 250px;
+    height: auto;
+}
+
+.contacto__container {
+    text-align: center;
+}
+
+.contacto__container p {
+    margin-bottom: 2rem;
+}
+
+.contacto__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contacto__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.contacto__item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: #FFF;
+    margin-top: 4rem;
+}
+
+/* ===== Botón Flotante de WhatsApp ===== */
+.whatsapp-float-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float-btn:hover {
+    transform: scale(1.1);
+}
+
+/* ================================================== */
+/* ===== ESTILOS RESPONSIVOS (PARA MÓVILES) ===== */
+/* ================================================== */
+@media screen and (max-width: 768px) {
+    /* ----- AJUSTES GENERALES ----- */
+    :root {
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.5rem;
+    }
+
+    .section {
+        padding: 4rem 0 2rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* ----- NAVEGACIÓN MÓVIL ----- */
+    .nav__list {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--container-color);
+        padding: 2rem 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border-radius: 0 0 1rem 1rem;
+        transition: top 0.4s;
+        z-index: 50;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .nav__list.show-menu {
+        top: var(--header-height);
+    }
+
+    .nav__toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--secondary-color);
+    }
+
+    /* ----- BOTÓN DE WHATSAPP EN MÓVIL ----- */
+    .whatsapp-float-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+}
+
+/* ===== Habilidades (Versión Mejorada) ===== */
+.habilidades__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.habilidad__categoria {
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.habilidad__categoria h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.habilidad__item {
+    margin-bottom: 1rem;
+}
+
+.habilidad__item p {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.habilidad__barra {
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.habilidad__barra span {
+    display: block;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    animation: fillBar 1.5s ease-out forwards;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0% !important;
+    }
+    to {
+        /* El ancho final lo define el estilo en línea del HTML */
+    }
+}
 
 /* ===== Sección de Proyectos ===== */
 .proyectos-grid {
@@ -52,7 +393,67 @@ body {
     gap: 2rem;
 }
 
-/* ... (resto de los estilos de proyectos, eliminando el '}' extra al final) ... */
+.proyecto-card {
+    background-color: var(--container-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.proyecto-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.proyecto-card-imagen {
+    overflow: hidden;
+    aspect-ratio: 16 / 10; /* Proporción para que todas las imágenes se vean uniformes */
+}
+
+.proyecto-card-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.proyecto-card:hover .proyecto-card-imagen img {
+    transform: scale(1.05); /* Sutil efecto de zoom al pasar el mouse */
+}
+
+.proyecto-card-contenido {
+    padding: 1.5rem;
+    flex-grow: 1; /* Asegura que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto-card-categoria {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.proyecto-card-contenido h3 {
+    margin-bottom: 0.5rem;
+}
 
 .proyecto-card-contenido p {
     color: var(--text-color-light);
