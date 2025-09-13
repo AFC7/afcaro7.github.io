@@ -377,3 +377,61 @@ a {
         font-size: 1.5rem;
     }
 }
+
+/* ===== Habilidades (Versión Mejorada) ===== */
+.habilidades__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.habilidad__categoria {
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.habilidad__categoria h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.habilidad__item {
+    margin-bottom: 1rem;
+}
+
+.habilidad__item p {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.habilidad__barra {
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.habilidad__barra span {
+    display: block;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    animation: fillBar 1.5s ease-out forwards;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0% !important;
+    }
+    to {
+        /* El ancho final lo define el estilo en línea del HTML */
+    }
+}
