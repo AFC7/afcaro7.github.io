@@ -292,21 +292,33 @@ a {
 /* ===== Footer (Pie de Página Mejorado) ===== */
 .footer {
     background-color: var(--secondary-color);
-    color: #A6A6A6; /* Un gris claro para que no sea tan brillante como el blanco */
+    color: #A6A6A6; 
     padding-top: 4rem;
 }
 
 .footer__container {
     display: grid;
-    /* Crea columnas que se adaptan automáticamente al tamaño de la pantalla */
+    /* LA MAGIA DE LA RESPONSIVIDAD ESTÁ AQUÍ */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     padding-bottom: 3rem;
 }
 
+.footer__content {
+    /* Esto ayuda a alinear el contenido en móviles */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo-img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 .footer__title {
-    font-size: var(--h3-font-size);
-    color: #FFF; /* Títulos en blanco para que resalten */
+    font-size: 1.25rem;
+    color: #FFF;
     margin-bottom: 1rem;
 }
 
@@ -324,7 +336,7 @@ a {
 }
 
 .footer__link:hover {
-    color: var(--primary-color); /* Se ilumina con tu color principal */
+    color: var(--primary-color);
 }
 
 .footer__social {
@@ -347,12 +359,16 @@ a {
     text-align: center;
     font-size: 0.8rem;
     padding: 1.5rem 0;
-    border-top: 1px solid #333; /* Línea divisoria sutil */
+    border-top: 1px solid #3a3a3a;
     margin-top: 2rem;
 }
-.footer__logo-img {
-    width: 200px; /* Ancho del logo, puedes ajustarlo */
-    height: auto;
+
+/* En pantallas pequeñas, centra el contenido de las columnas */
+@media screen and (max-width: 768px) {
+    .footer__content {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* ===== Botón Flotante de WhatsApp ===== */
