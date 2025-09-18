@@ -350,6 +350,10 @@ a {
     border-top: 1px solid #333; /* Línea divisoria sutil */
     margin-top: 2rem;
 }
+.footer__logo-img {
+    width: 200px; /* Ancho del logo, puedes ajustarlo */
+    height: auto;
+}
 
 /* ===== Botón Flotante de WhatsApp ===== */
 .whatsapp-float-btn {
