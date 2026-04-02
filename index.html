@@ -1,380 +1,96 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrés Felipe Caro Muñoz | Ingeniero Electrónico</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <title>GP Design STUDIO | Diseño & Comunicaciones</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-    <header class="header">
-        <nav class="nav container">
-            <a href="#inicio" class="nav__logo">
-                <img src="images/logo_pequeno.png" alt="Logo Andrés Caro" class="nav__logo-img">
-            </a>
-
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
-                <li class="nav__item"><a href="#sobre-mi" class="nav__link">Perfil</a></li>
-                <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
-                <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
-                <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
-                <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
-            </ul>
-
-            <div class="nav__toggle" id="nav-toggle">
+<header>
+    <nav class="contenedor-nav">
+        <a href="index.html" class="logo">GP Design<span> STUDIO</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="nav__toggle" id="nav-toggle">
                 <i class="fas fa-bars"></i>
             </div>
-        </nav>
-    </header>
+    </nav>
+</header>
 
     <main>
-        <section id="inicio" class="inicio">
-            <div class="inicio__container">
-
-                <h1>Andrés Felipe Caro Muñoz</h1>
-                <p class="inicio__profesion">Ingeniero Electrónico</p>
-                <p class="inicio__descripcion">
-                    Enfocado en asegurar la continuidad operativa y optimizar los recursos tecnológicos.
-                </p>
-                <div class="inicio__social">
-                    <a href="https://www.linkedin.com/in/afcaro7" target="_blank" class="inicio__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/AFC7" target="_blank" class="inicio__social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                </div>
-                <a href="#contacto" class="button">Contáctame</a>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Diseño con Propósito,<br>Comunicación con Impacto</h1>
+                <p>Especialista en desarrollo de producto y estrategia comunicativa corporativa.</p>
+                <a href="portafolio.html" class="btn-main">Explorar Proyectos</a>
             </div>
         </section>
 
-        <section id="sobre-mi" class="section">
-            <h2 class="section__title" data-aos="fade-down">Perfil Profesional</h2>
-            <div class="sobre-mi__container container" data-aos="fade-down">
-                <p>
-                    Ingeniero Electrónico con experiencia en la gestión de infraestructura tecnológica en los sectores de transporte y construcción. Especializado en soporte técnico, administración de redes y mantenimiento de sistemas de video vigilancia. Busco aplicar mis habilidades para fortalecer la seguridad y eficiencia de los sistemas de información.
-                </p>
-                <a href="CV_AFC_20_25.pdf" class="button" download>Descargar CV</a>
-            </div>
-        </section>
-
-        <section id="experiencia" class="section">
-            <h2 class="section__title" data-aos="fade-down">Experiencia Profesional</h2>
-            <div class="experiencia__container container">
-                <div class="experiencia__item" data-aos="fade-up">
-                    <h3>Ingeniero Electrónico</h3>
-                    <p class="experiencia__empresa">E.I.C.E. Terminal de Transportes de Fusagasugá</p>
-                    <p class="experiencia__fecha">Septiembre 2024 - Actualidad</p>
-                    <ul>
-                        <li>Lideré el área de TI, logrando una reducción del 80% en errores de reportes de fallas internas.</li>
-                        <li>Gestiono la infraestructura tecnológica, asegurando la continuidad operativa de hardware, software y redes.</li>
-                        <li>Administro sistemas críticos de seguridad (CCTV y control de acceso).</li>
-                    </ul>
-                </div>
-               <div class="experiencia__item" data-aos="fade-up">
-                    <h3>Auxiliar Administrativo de Ingeniería</h3>
-                    <p class="experiencia__empresa">Constructora RMG SAS</p>
-                    <p class="experiencia__fecha">Enero 2024 - Julio 2024</p>
-                    <ul>
-                        <li>Participé en el estudio técnico y planificación de cableado estructurado para nuevos proyectos.</li>
-                        <li>Diseñé y desarrollé la página web de la constructora como herramienta de marketing.</li>
-                    </ul>
-                </div>
-                <div class="experiencia__item" data-aos="fade-up">
-                    <h3>Ingeniero Electrónico Docente</h3>
-                    <p class="experiencia__empresa">Docencia en Tecnología y Programación</p>
-                    <p class="experiencia__fecha">Febrero 2024 - Junio 2024</p>
-                    <ul>
-                        <li>Diseñé y estructuré el plan de estudios para el área de Tecnología, Programación e Investigación.</li>
-                        <li>Gestioné el control académico de los estudiantes, supervisando su progreso y evaluando objetivos.</li>
-                        <li>Impartí clases en materias de tecnología y programación, fomentando el desarrollo de habilidades técnicas.</li>
-                    </ul>
-                </div>
-                <div class="experiencia__item" data-aos="fade-up">
-                    <h3>Ingeniero Electrónico</h3>
-                    <p class="experiencia__empresa">Constructora Roldan Junior S.A.S.</p>
-                    <p class="experiencia__fecha">Noviembre 2022 - Junio 2023</p>
-                    <ul>
-                        <li>Desarrollé un sistema de software y base de datos para optimizar el control de inventario.</li>
-                        <li>Ejecuté la operación y mantenimiento de herramientas programables con PLC.</li>
-                    </ul>
-                </div>
-                <div class="experiencia__item" data-aos="fade-up">
-                    <h3>Asistente de Ingeniería</h3>
-                    <p class="experiencia__empresa">CONSTRUCCIONES PARAMO MATIZ LTDA</p>
-                    <p class="experiencia__fecha">Abril 2022 - Octubre 2022</p>
-                    <ul>
-                        <li>Participé en el montaje de la planta de asfalto para el consorcio Ruta 40 (infraestructura eléctrica).</li>
-                        <li>Apoyé en el diseño de circuitos eléctricos para la maquinaria y sistemas de control de la planta.</li>
-                        <li>Elaboré planos detallados de cableado y conexión utilizando software de diseño.</li>
-                    </ul>
-                </div>
-                <div class="experiencia__item" data-aos="fade-up">
-                    <h3>Contratista</h3>
-                    <p class="experiencia__empresa">SST GCA</p>
-                    <p class="experiencia__fecha">Agosto 2021 – Noviembre 2021</p>
-                    <ul>
-                        <li>Diseñé e implementé un sistema fotovoltaico autónomo, desde la planificación hasta la puesta en marcha.</li>
-                        <li>Desarrollé e instalé un sistema semiautomático para la recolección y aprovechamiento de aguas lluvias.</li>
-                        <li>Realicé apoyo en auditorías técnicas en instalaciones eléctricas,donde se verificó el cumplimiento del reglamento (RETIE).</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-<section id="habilidades" class="section">
-    <h2 class="section__title" data-aos="fade-down">Habilidades</h2>
-    <div class="habilidades__grid container">
-
-        <div class="habilidad__categoria" data-aos="fade-up">
-            <h3><i class="fas fa-code"></i> Desarrollo y Software</h3>
-            <div class="habilidad__item">
-                <p>HTML, CSS, JS</p>
-                <div class="habilidad__barra"><span style="width: 90%;"></span></div>
-            </div>
-            <div class="habilidad__item">
-                <p>Python</p>
-                <div class="habilidad__barra"><span style="width: 75%;"></span></div>
-            </div>
-            <div class="habilidad__item">
-                <p>SQL y Bases de Datos</p>
-                <div class="habilidad__barra"><span style="width: 80%;"></span></div>
-            </div>
-        </div>
-
-        <div class="habilidad__categoria" data-aos="fade-up" data-aos-delay="100">
-            <h3><i class="fas fa-network-wired"></i> Infraestructura y Redes</h3>
-            <div class="habilidad__item">
-                <p>Gestión de Infraestructura Tecnológica</p>
-                <div class="habilidad__barra"><span style="width: 95%;"></span></div>
-            </div>
-            <div class="habilidad__item">
-                <p>Redes y Comunicaciones</p>
-                <div class="habilidad__barra"><span style="width: 85%;"></span></div>
-            </div>
-            <div class="habilidad__item">
-                <p>Administración de Hardware y Software</p>
-                <div class="habilidad__barra"><span style="width: 90%;"></span></div>
-            </div>
-        </div>
-
-        <div class="habilidad__categoria" data-aos="fade-up" data-aos-delay="200">
-            <h3><i class="fas fa-shield-alt"></i> Seguridad</h3>
-            <div class="habilidad__item">
-                <p>Seguridad CCTV y Control de Acceso</p>
-                <div class="habilidad__barra"><span style="width: 90%;"></span></div>
-            </div>
-            <div class="habilidad__item">
-                <p>Políticas de Seguridad y Backups</p>
-                <div class="habilidad__barra"><span style="width: 80%;"></span></div>
-            </div>
-        </div>
-
-        <div class="habilidad__categoria" data-aos="fade-up" data-aos-delay="300">
-            <h3><i class="fas fa-cogs"></i> Hardware y Soporte</h3>
-            <div class="habilidad__item">
-                <p>Programación PLC</p>
-                <div class="habilidad__barra"><span style="width: 70%;"></span></div>
-            </div>
-            <div class="habilidad__item">
-                <p>Soporte Técnico Especializado</p>
-                <div class="habilidad__barra"><span style="width: 95%;"></span></div>
-            </div>
-        </div>
-
-    </div>
-</section>
-   <section id="proyectos" class="section">
-            <h2 class="section__title" data-aos="fade-down">Proyectos Destacados</h2>
-            <div class="proyectos-grid container gallery">
-
-                <div class="proyecto-card" data-aos="fade-up">
-                    <a href="https://www.studioximenaurrea.site/" target="_blank" class="proyecto-card-link">
-                        <div class="proyecto-card-imagen">
-                            <img src="images/proyecto-web.webp" alt="Portafolio para Studio Ximena Urrea" width="1080" height="1080">
-                        </div>
-                        <div class="proyecto-card-contenido">
-                            <span class="proyecto-card-categoria">Desarrollo Web</span>
-                            <h3>Portafolio Digital para Artista Profesional</h3>
-                            <p>Desarrollo front-end y diseño de un portafolio web minimalista y responsivo. El proyecto se centró en optimizar la experiencia de usuario y la presentación visual de trabajos artísticos para atraer nuevos clientes.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="proyecto-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="proyecto-card-imagen">
-                        <a href="images/panel.webp" data-caption="Instalación de paneles solares en campo.">
-                            <img src="images/panel.webp" alt="Sistema Fotovoltaico" width="1080" height="1080">
-                        </a>
-                        <a href="images/fotovoltaico-2.webp" data-caption="Detalle del inversor y banco de baterías." style="display:none;"></a>
-                        <a href="images/fotovoltaico-3.webp" data-caption="Diagrama de conexión del sistema." style="display:none;"></a>
-                    </div>
-                    <div class="proyecto-card-contenido">
-                        <span class="proyecto-card-categoria">Energías Renovables</span
-                        <h3>Diseño de Sistems Fotovoltaicos </h3>
-                        <p>Planificación, diseño e implementación de un sistema de energía solar off-grid. El proyecto incluyó el cálculo de demanda energética, selección de componentes y puesta en marcha para garantizar la autonomía eléctrica.</p>
+        <section id="proyectos" class="content">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img" style="background-color: var(--arena);"></div>
+                    <div class="project-info">
+                        <span>Diseño Industrial</span>
+                        <h3>Modelado 3D Fotorrealista</h3>
+                        <p>Desarrollo de mobiliario ergonómico con acabados premium.</p>
                     </div>
                 </div>
-
-                <div class="proyecto-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="proyecto-card-imagen">
-                        <a href="images/mezcladora.webp" data-caption="Mantenimiento de PLC en mezcladora de concreto.">
-                            <img src="images/mezcladora.webp" alt="Mantenimiento de Mezcladora Industrial" width="1080" height="1080">
-                        </a>
-                    </div>
-                    <div class="proyecto-card-contenido">
-                        <span class="proyecto-card-categoria">Automatización y Control</span>
-                        <h3>Mantenimiento de PLC en Maquinaria Pesada</h3>
-                        <p>Ejecución de mantenimiento preventivo y correctivo en controladores lógicos programables (PLC) para maquinaria de construcción, asegurando la continuidad operativa y minimizando tiempos de inactividad.</p>
-                    </div>
-                </div>
-
-                <div class="proyecto-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="proyecto-card-imagen">
-                        <a href="images/mantenimiento sistemas CCTV.webp" data-caption="Protocolo de mantenimiento preventivo para sistemas de videovigilancia.">
-                            <img src="images/mantenimiento sistemas CCTV.webp" alt="Mantenimiento de Sistemas CCTV" width="1080" height="1080">
-                        </a>
-                    </div>
-                    <div class="proyecto-card-contenido">
-                        <span class="proyecto-card-categoria">Seguridad Electrónica</span>
-                        <h3>Protocolo de Mantenimiento CCTV</h3>
-                        <p>Desarrollo y aplicación de un plan de mantenimiento integral para sistemas de videovigilancia, cubriendo la inspección de cámaras, grabadores (DVR/NVR) y fuentes de poder para garantizar su máxima fiabilidad.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="contacto" class="section">
-            <div class="contacto__logo-container" data-aos="fade-up">
-                <img src="images/logo.png" alt="Logo Andrés Felipe Caro" class="contacto__logo-img">
-            </div>
-            <h2 class="section__title" data-aos="fade-down">Contacto</h2>
-            <div class="contacto__container container">
-                <p>Si mi perfil te parece interesante, no dudes en contactarme.</p>
-                <div class="contacto__info">
-                    <div class="contacto__item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:electroandrescaro@gmail.com">electroandrescaro@gmail.com</a>
-                    </div>
-                    <div class="contacto__item">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+573106180550">(+57) 3106180550</a>
-                    </div>
-                     <div class="contacto__item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/afcaro7" target="_blank">LinkedIn</a>
+                <div class="project-card">
+                    <div class="project-img" style="background-color: var(--marron-medio);"></div>
+                    <div class="project-info">
+                        <span>Comunicaciones</span>
+                        <h3>Identidad Corporativa</h3>
+                        <p>Estrategia de comunicación interna para empresas del sector TI.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-  <footer class="footer">
-        <div class="footer__container container">
-            
-            <div class="footer__content">
-                <a href="#inicio" class="footer__logo">
-                    <img src="images/logo.png" alt="Logo Andrés Felipe Caro" class="footer__logo-img">
-                </a>
-            </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-            <div class="footer__content">
-                <h3 class="footer__title">Navegación</h3>
-                <ul class="footer__links">
-                    <li><a href="#sobre-mi" class="footer__link">Perfil</a></li>
-                    <li><a href="#experiencia" class="footer__link">Experiencia</a></li>
-                    <li><a href="#proyectos" class="footer__link">Proyectos</a></li>
-                    <li><a href="#contacto" class="footer__link">Contacto</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Redes Sociales</h3>
-                <div class="footer__social">
-                    <a href="https://www.linkedin.com/in/afcaro7" target="_blank" class="footer__social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/AFC7" target="_blank" class="footer__social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <div class="logo-footer">GP Design<span> STUDIO</span></div>
+            <p>Estrategia y forma. Soluciones integrales en diseño y comunicación corporativa enfocadas en la eficiencia funcional.</p>
         </div>
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contacto & Redes</h4>
+            <ul class="contact-list">
+                <li>proyectos@gpdesignstudio.com</li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 GP Design STUDIO. Todos los derechos reservados.</p>
+        <p>Diseño Industrial & Comunicaciones</p>
+    </div>
+</footer>
 
-        <p class="footer__copy">&#169; 2025 Andrés Felipe Caro Muñoz. Todos los derechos reservados.</p>
-    </footer>
-    <a href="https://wa.me/573106180550?text=Hola%20Andrés,%20vi%20tu%20portafolio%20web%20y%20estoy%20interesado%20en%20tu%20perfil." class="whatsapp-float-btn" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script>
-        /* ================================================ */
-        /* INICIALIZACIÓN DE LA LIBRERÍA DE ANIMACIONES  */
-        /* ================================================ */
-        // Esta línea enciende la librería AOS y le da una duración
-        // estándar de 800 milisegundos a las animaciones.
-        AOS.init({
-            duration: 800,
-            once: true // La animación solo ocurre una vez por elemento
-        });
-
-
-        /* ================================================ */
-        /* CÓDIGO PARA EL MENÚ DE HAMBURGUESA MÓVIL      */
-        /* ================================================ */
-        const navMenu = document.querySelector('.nav__list');
-        const navToggle = document.getElementById('nav-toggle');
-
-        navToggle.addEventListener('click', () => {
-            // Muestra u oculta el menú
-            navMenu.classList.toggle('show-menu');
-
-            // Cambia el ícono de hamburguesa a una "X" y viceversa
-            const icon = navToggle.querySelector('i');
-            if (icon.classList.contains('fa-bars')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>
-
-    <script>
-        // Inicializar AOS
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-
-        // Inicializar el Menú Móvil
-        // ... (tu código del menú va aquí) ...
-
-        // 3. AÑADE LA INICIALIZACIÓN DE LA GALERÍA AQUÍ
-        window.addEventListener('load', function() {
-            baguetteBox.run('.gallery');
-        });
-    </script>
-</body>
-
-</body>
-</html>
-
+    <script src="script.js"></script>
 </body>
 </html>

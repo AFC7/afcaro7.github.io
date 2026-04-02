@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | GP Design STUDIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="contenedor-nav">
+        <a href="index.html" class="logo">GP Design<span> STUDIO</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main class="contact-page">
+    <section class="contact-container contenedor">
+        
+        <div class="contact-info">
+            <span class="tagline">Conectemos</span>
+            <h2 class="section-title">Hagamos que suceda.</h2>
+            <p>Estamos listos para escuchar tu próximo desafío técnico o creativo. Ubicados en Fusagasugá, diseñamos soluciones para el mundo.</p>
+            
+            <div class="contact-details">
+                <div class="detail-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>Fusagasugá, Cundinamarca, CO.</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <div>
+                        <h4>Email Directo</h4>
+                        <p>proyectos@gpdesignstudio.com</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <h4>Línea Directa</h4>
+                        <p>+57 (3XX) XXX XX XX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <form class="contact-form" action="https://formspree.io/f/mgoplwgl" method="POST">
+                
+                <div class="form-group">
+                    <label for="full-name">¿Cómo te llamas?</label>
+                    <input type="text" id="full-name" name="nombre_cliente" placeholder="Tu nombre completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email-address">Tu correo corporativo</label>
+                    <input type="email" id="email-address" name="email_contacto" placeholder="ejemplo@empresa.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>¿En qué área necesitas apoyo?</label>
+                    <div class="interest-selector">
+                        <input type="radio" name="categoria_proyecto" id="ind" value="Diseño Industrial" checked>
+                        <label for="ind">Diseño Industrial</label>
+                        
+                        <input type="radio" name="categoria_proyecto" id="com" value="Comunicaciones">
+                        <label for="com">Comunicaciones</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Cuéntanos brevemente tu proyecto</label>
+                    <textarea id="message" name="descripcion_proyecto" rows="4" placeholder="¿Qué tienes en mente?" required></textarea>
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none">
+
+                <button type="submit" class="btn-submit">
+                    Enviar Propuesta <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <div class="logo-footer">GP Design<span> STUDIO</span></div>
+            <p>Estrategia y forma. Soluciones integrales en diseño y comunicación corporativa.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Redes Sociales</h4>
+            <div class="footer-social">
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 GP Design STUDIO. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | GP Design STUDIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="contenedor-nav">
+        <a href="index.html" class="logo">GP Design<span> STUDIO</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="portafolio.html" class="active">Portafolio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main class="portfolio-page">
+    <section class="filter-container">
+        <h2 class="section-title">Nuestros Proyectos</h2>
+        <p class="section-subtitle">Explora nuestra selección de trabajos en diseño industrial y estrategias de comunicación.</p>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="industrial">Diseño Industrial</button>
+            <button class="filter-btn" data-filter="comunicaciones">Comunicaciones</button>
+        </div>
+    </section>
+
+    <section class="projects-grid" id="portfolio-grid">
+        
+        <div class="project-card" data-category="industrial">
+            <div class="project-img" style="background-color: var(--arena);"></div>
+            <div class="project-info">
+                <span>Diseño Industrial</span>
+                <h3>Modelado 3D Fotorrealista</h3>
+                <p>Desarrollo de mobiliario ergonómico con acabados de alta calidad para entornos corporativos.</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="comunicaciones">
+            <div class="project-img" style="background-color: var(--marron-medio);"></div>
+            <div class="project-info">
+                <span>Comunicaciones</span>
+                <h3>Identidad Corporativa</h3>
+                <p>Estrategia de comunicación visual y manual de marca para empresas tecnológicas.</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="industrial">
+            <div class="project-img" style="background-color: var(--terracota);"></div>
+            <div class="project-info">
+                <span>Diseño Industrial</span>
+                <h3>Luminaria Minimalista</h3>
+                <p>Estudio de iluminación técnica enfocado en la eficiencia energética y estética moderna.</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="comunicaciones">
+            <div class="project-img" style="background-color: var(--marron-claro);"></div>
+            <div class="project-info">
+                <span>Comunicaciones</span>
+                <h3>Estrategia Digital</h3>
+                <p>Optimización de canales de comunicación interna y externa para el sector industrial.</p>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <div class="logo-footer">GP Design<span> STUDIO</span></div>
+            <p>Estrategia y forma. Soluciones integrales en diseño y comunicación corporativa enfocadas en la eficiencia funcional.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contacto & Redes</h4>
+            <ul class="contact-list">
+                <li>proyectos@gpdesignstudio.com</li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 GP Design STUDIO. Todos los derechos reservados.</p>
+        <p>Diseño Industrial & Comunicaciones</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
